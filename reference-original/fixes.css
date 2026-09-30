@@ -1,0 +1,56 @@
+.portfolio-v3 .digital-content {
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr);
+}
+
+.portfolio-v3 .digital-content > * {
+  min-width: 0;
+}
+
+.portfolio-v3 .digital-content p {
+  word-break: auto-phrase;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 700px) {
+  .portfolio-v3 .digital-content {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .portfolio-v3 .experience-statement {
+    width: auto;
+    max-width: 100%;
+    min-width: 0;
+    font-size: clamp(1.45rem, 7vw, 1.9rem);
+    line-height: 1.42;
+    letter-spacing: -.035em;
+    white-space: normal;
+    word-break: normal;
+    word-break: auto-phrase;
+    overflow-wrap: anywhere;
+  }
+
+  .portfolio-v3 .about-content-v2 {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .portfolio-v3 .about-content-v2 > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .portfolio-v3 .about-content-v2 h3,
+  .portfolio-v3 .about-content-v2 div > p {
+    white-space: normal;
+    word-break: normal;
+    word-break: auto-phrase;
+    overflow-wrap: anywhere;
+  }
+
+  .portfolio-v3 .about-content-v2 div > p {
+    font-size: 1rem;
+    line-height: 1.85;
+  }
+}
